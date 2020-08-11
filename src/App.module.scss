@@ -1,0 +1,13 @@
+.container {
+    background-color: rgba(255, 255, 255, 0.35);
+    border: 0;
+    color: #242424;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 20px;
+  }
+
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+}

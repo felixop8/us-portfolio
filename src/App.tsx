@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+import { About, TitleName, EmploymentHistory, Skills, Education, Projects } from './components';
+import { employmentHistoryData, skillsData, educationData, projectsData } from './data';
+
+import styles from './App.module.scss';
+
+export type AppProps = {}
+
+export const App: React.FC<AppProps> = () => (
+    <div className={styles.container}>
+
+      <header role='banner' className={styles.headerContainer}>
+        <TitleName />
+        <About />
       </header>
-    </div>
-  );
-}
+      
+      <main>
+        <EmploymentHistory data={employmentHistoryData}/>
+        <Skills skillsData={skillsData}/>
+        <Education educationData={educationData} />
+        <Projects projectsData={projectsData} />
+      </main>
 
-export default App;
+      <footer>
+        
+      </footer>
+
+    </div>  
+)
