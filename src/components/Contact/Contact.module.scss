@@ -3,15 +3,15 @@
     flex: 1;
 }
 
-.educationList {
+.linkList {
     padding-left: 0;
-    list-style: none;;
+    list-style: none;
 }
 
-.education {
+.linkList li {
     padding-bottom: 10px;
 }
 
-.educationTitle {
-    font-weight: bold;
+.linkList li a {
+    color: #242424;
 }

@@ -1,13 +1,23 @@
 .container {
-    background-color: rgba(255, 255, 255, 0.35);
-    border: 0;
-    color: #242424;
-    margin: 0 auto;
-    max-width: 1300px;
-    padding: 20px;
-  }
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 0;
+  color: #242424;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 60px;
+  background-color: #fbe384;
+}
 
-  .headerContainer {
-    display: flex;
-    flex-direction: row;
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+
+.lowerSection {
+  padding-top: 100px;;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }

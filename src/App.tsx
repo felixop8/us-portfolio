@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { About, TitleName, EmploymentHistory, Skills, Education, Projects } from './components';
-import { employmentHistoryData, skillsData, educationData, projectsData } from './data';
+import { About, TitleName, EmploymentHistory, Skills, Education, Projects, Contact, Interests } from './components';
+import { employmentHistoryData, skillsData, educationData, projectsData, about, interests } from './data';
 
 import styles from './App.module.scss';
 
@@ -12,14 +12,18 @@ export const App: React.FC<AppProps> = () => (
 
       <header role='banner' className={styles.headerContainer}>
         <TitleName />
-        <About />
+        <About aboutData={about}/>
       </header>
       
       <main>
         <EmploymentHistory data={employmentHistoryData}/>
-        <Skills skillsData={skillsData}/>
-        <Education educationData={educationData} />
-        <Projects projectsData={projectsData} />
+        <section className={styles.lowerSection}>
+          <Skills skillsData={skillsData}/>
+          <Education educationData={educationData} />
+          <Interests interestsData={interests} />
+          <Contact />
+        </section>
+        {/* <Projects projectsData={projectsData} /> */}
       </main>
 
       <footer>

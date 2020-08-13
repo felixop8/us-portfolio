@@ -2,7 +2,7 @@ import { IEducation } from '../types';
 
 export const educationData: IEducation[] = [
     {
-        title: 'Coding Bootcamp (PHP, JavaScript)(800 hours of coding)',
+        title: 'Coding Bootcamp (PHP, JavaScript)',
         center: 'Epicodus - Portland, OR'
     },
     {

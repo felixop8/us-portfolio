@@ -1,12 +1,20 @@
 import * as React from 'react';
 
 import styles from './About.module.scss';
+import { IAbout } from '../../types';
 
-export type AboutProps = {};
+export type AboutProps = {aboutData: IAbout};
 
-export const About: React.FC<AboutProps> = () => (
+export const About: React.FC<AboutProps> = ({ aboutData }) => (
     <div className={styles.container}>
-        <h3>About</h3>
-        <p>State your career goals and show how they align with the job description you’re targeting. Be brief and keep it from sounding generic. Be yourself.</p>
+        <h2 className={styles.about}>About</h2>
+
+        <div className={styles.summary}>
+            {
+                aboutData.summary.map((detail, i) => (
+                    <p key={i}>{detail}</p>
+                ))
+            }
+        </div>
     </div>
 )

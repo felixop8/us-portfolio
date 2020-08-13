@@ -7,13 +7,13 @@ import { IEducation } from '../../types';
 export type EducationProps = {educationData: IEducation[]};
 
 export const Education: React.FC<EducationProps> = ({ educationData }) => (
-    <div>
-        <h3>Education</h3>
-        <ul>
+    <div className={styles.container}>
+        <h2>Education</h2>
+        <ul className={styles.educationList}>
             {
                 educationData.map((education, i) => (
-                    <li key={i}>
-                        {education.title} {education.center}
+                    <li key={i} className={styles.education}>
+                        <span className={styles.educationTitle}>{education.title}</span> <br/> {education.center}
                     </li>
                 ))
             }

@@ -5,7 +5,7 @@ export const employmentHistoryData: IEmploymentHistory[] = [
         jobTitle: 'Software Engineer',
         company: 'Vacasa',
         location: 'Portland, OR',
-        dates: 'JULY 2017 - MARCH 2020',
+        dates: 'July 2017 - March 2020',
         summary: 'Responsible for building and maintaining internal tool systems.',
         accomplishments: [
             'Collaborated with UX and Product to set quarterly plans and ensure technical feasibility.',

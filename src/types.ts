@@ -28,3 +28,11 @@ export interface IProjects {
     description: string,
     links: ILinks[]
 }
+
+export interface IAbout {
+    summary: string[]
+}
+
+export interface IInterests {
+    interests: string[]
+}
