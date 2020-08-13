@@ -1,3 +1,7 @@
+body {
+  background-color: #f8f3ed;
+}
+
 .container {
   background-color: rgba(255, 255, 255, 0.35);
   border: 0;
@@ -15,9 +19,11 @@
   padding-bottom: 70px;
 }
 
+
 .lowerSection {
-  padding-top: 100px;;
+  padding-top: 100px;
+  padding-bottom: 70px;
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  flex-wrap: wrap;
 }

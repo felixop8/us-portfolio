@@ -1,0 +1,57 @@
+.container {
+    padding-top: 20px;
+    border-top: 9px solid #242424;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.projectsTitle {
+    font-size: 60px;
+}
+
+.projectTitle, .projectSubtitle {
+    border-bottom: 4px solid #242424;
+}
+
+.projectTitle {
+    margin-bottom: 10px;
+    font-size: 30px;;
+}
+
+.projectSubtitle {
+    height: 40px;
+    font-weight: bold;
+  
+}
+
+.projectCard {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+
+.description {
+    flex: 1;
+}
+
+.linksList {
+    padding-left: 0;
+    list-style: none;
+}
+
+.linksList li {
+    padding-bottom: 5px;
+}
+
+.linksList li a {
+    color: #242424;
+    font-weight: bold;
+}

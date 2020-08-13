@@ -8,23 +8,26 @@ import styles from './App.module.scss';
 export type AppProps = {}
 
 export const App: React.FC<AppProps> = () => (
-    <div className={styles.container}>
-
-      <header role='banner' className={styles.headerContainer}>
-        <TitleName />
-        <About aboutData={about}/>
-      </header>
-      
-      <main>
-        <EmploymentHistory data={employmentHistoryData}/>
-        <section className={styles.lowerSection}>
-          <Skills skillsData={skillsData}/>
-          <Education educationData={educationData} />
-          <Interests interestsData={interests} />
-          <Contact />
-        </section>
-        {/* <Projects projectsData={projectsData} /> */}
-      </main>
+    <div>
+      <div className={styles.container}>
+        <header role='banner' className={styles.headerContainer}>
+          <TitleName />
+          <About aboutData={about}/>
+        </header>
+        
+        <main>
+          <EmploymentHistory data={employmentHistoryData}/>
+          <section className={styles.lowerSection}>
+            <Skills skillsData={skillsData}/>
+            <Education educationData={educationData} />
+            <Interests interestsData={interests} />
+            <Contact />
+          </section>
+          <section>
+            <Projects projectsData={projectsData} />
+          </section>
+        </main>
+      </div>
 
       <footer>
         

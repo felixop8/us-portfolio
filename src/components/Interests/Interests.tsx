@@ -7,10 +7,11 @@ export type InterestsProps = { interestsData: IInterests};
 
 export const Interests: React.FC<InterestsProps> = ({ interestsData }) => (
     <div className={styles.container}>
-        <ul>
+        <h2>Interests</h2>
+        <ul className={styles.interestsList}>
             {
                 interestsData.interests.map((interest, i) => (
-                    <li key={i}>
+                    <li key={i} className={styles.interest}>
                         {interest}
                     </li>
                 ))
