@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  Felix Oporto Lopez's Portfolio Website
+</h1>
+
+This is the portfolio website of Felix Oporto Lopez, built with a Typescript template `npx create-react-app my-app --template typescript`.
+
 
 ## Available Scripts
 
